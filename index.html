@@ -1,1 +1,1839 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<link rel="icon" type="image/png" href="/images/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10" width="device-width">
+<meta name="facebook-domain-verification" content="mlf74ufbfbbioak3cijh0c0d8f8hb5" />
+<link rel="stylesheet" type="text/css" href="/assets/54534cdc/pager.css" />
+<title>Ireland West Airport</title>
+<meta name="title" content="flight_information">
+<meta name="keywords" content="flight information, arrivals, departures, airport, on time, destinations, book flights, new routes, majorca, cologne, ryanair, flybe, aer lingus">
+<meta name="description" content="information of flight arrivals and departures from ireland west airport knock including destinations and new routes">
+<meta name="theme-color" content="#60b353" />
+<meta name="author" content="Ireland West Airport">
+<meta name="robots" content="index,follow">
+<meta property="og:title" content="flight_information">
+<meta property="og:description" content="information of flight arrivals and departures from ireland west airport knock including destinations and new routes" />
+<meta property="og:url" content="" />
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-987454101"></script>
+<script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-987454101'); </script>
+
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '152513858849945');
+fbq('track', 'PageView');
+</script>
+<noscript>
+    <img height="1" width="1"src="https://www.facebook.com/tr?id=152513858849945&ev=PageView&noscript=1"/>
+</noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-2941997-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-2941997-2');
+</script>
+
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="/css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="/css/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="/css/owl.theme.css">
+<link rel='stylesheet' href='/css/style-map.css' type='text/css' media='all' />
+<link rel="stylesheet" type="text/css" href="/css/jquery.mCustomScrollbar.css">
+<script src="/js/jquery-2.1.3.js" type="text/javascript"></script>
+<script src="/js/bootstrap.js" type="text/javascript"></script>
+<script src="/js/owl.carousel.js" type="text/javascript"></script>
+<script src="/js/jquery-validation/jquery.validate.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/datepicker.ui.css">
+<script src="/js/datepicker.ui.min.js" type="text/javascript"></script>
+<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/e5e686b70af282dd84cfe92d7/b34326b311a369cad4e20d5ea.js");</script>
+<div id="Searching_Modal" class="modal fade" role="dialog" data-keyboard="false">
+<div class="modal-dialog">
+<div class="myLoader">
+<div class="box-table">
+<div class="box-cell">
+<div class="logo">
+<img src="/images/logo.png" class="img-responsive center-block" alt="Logo">
+</div>
+<main>
+<div class="loader">
+<div class="loader-inner line-scale">
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+</div>
+</div>
+</main>
+</div>
+</div></div>
+</div></div>
+<div id="alert-modal" class="modal fade alert-modal" role="dialog" data-keyboard="false">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body">
+<h2 id="alert_message">
+</h2>
+</div></div>
+</div></div>
+<script type="text/javascript">
+    showLoadingBox();
+    function showLoadingBox() {
+        $('#Searching_Modal').modal('show');
+    }
+    function closeLoadingBox() {
+        setTimeout(function () {
+            $('#Searching_Modal').modal('hide');
+        }, 1000);
+
+
+    }
+    
+     function clubSubscribe_new() {
+        var emailAddress = $('#subscribeEmail').val();
+        var url= "/newsletter/email/";
+        if(emailAddress!=""){
+        window.location.href = url+emailAddress;
+        }
+    }
+    
+    
+    function clubSubscribe_old() {
+        var emailAddress = $('#subscribeEmail').val();
+        if(emailAddress!=""){
+        $("#clubSubscribe").attr("disabled", true);
+        showLoadingBox();
+        $.ajax({
+            url: "/clubSignUp/addClubWestUser", // Url to which the request is send
+            type: "POST", // Type of request to be send, called as method
+            data: "club_email=" + emailAddress+'&YII_CSRF_TOKEN=RTlsXzRkZkFTMzVoZFV3TDd1S2NaNFFWY05oS19qWGWX7aZ8q6fF17anjsOpE2X-p7Py2FIZyl7av1l-Xg5LHw==', // Data sent to server, a set of key/value pairs (i.e. form fields and values)
+            success: function (data)   // A function to be called if request succeeds
+            {
+                $("#clubSubscribe").attr("disabled", false);
+                closeLoadingBox();
+                if (data != '') {
+                   
+                   $('#alert_message').html(data);
+                    
+                } else {
+                 localStorage.setItem("clubUserEmail",emailAddress );
+                 
+                  var url= "/newsletter/";
+        
+                   window.location.href = url;
+                  //  $('#alert_message').html('Thank you for subscribe!');
+                  //  $('#subscribeEmail').val('');
+                }
+             //   $('#alert-modal').modal('show');
+            }
+        });
+        }else{
+        $(".invalid-email").html('Enter Email Address');
+        $(".invalid-email").fadeIn(1000);
+        }
+        $(".invalid-email").fadeOut(5000);
+        
+
+    }
+    
+ function clubSubscribe() {
+        var emailAddress = $('#subscribeEmail').val();
+        
+        var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+			
+        
+                         if (!emailAddress) {
+				
+				 $(".invalid-email").html("Enter Email Address");
+                      $(".invalid-email").fadeIn(1000);
+			} else if (!filter.test(emailAddress)) {
+				$(".invalid-email").html("Invalid Email Address");
+				$(".invalid-email").fadeIn(1000);
+			} else {
+				
+				//$(".invalid-email").empty();
+			
+        //$("#clubSubscribe").attr("disabled", true);
+        //showLoadingBox();
+        $.ajax({
+            url: "/clubSignUp/addClubWestUser", // Url to which the request is send
+            type: "POST", // Type of request to be send, called as method
+            data: "club_email=" + emailAddress+'&YII_CSRF_TOKEN=RTlsXzRkZkFTMzVoZFV3TDd1S2NaNFFWY05oS19qWGWX7aZ8q6fF17anjsOpE2X-p7Py2FIZyl7av1l-Xg5LHw==', // Data sent to server, a set of key/value pairs (i.e. form fields and values)
+            success: function (data)   // A function to be called if request succeeds
+            {
+               
+                $("#clubSubscribe").attr("disabled", false);
+               // closeLoadingBox();
+                if (data !== '') {
+                    $(".invalid-email").html(data);
+                      $(".invalid-email").fadeIn(1000);
+                      $(".invalid-email").fadeOut(5000);
+                  
+                } else {
+                 localStorage.setItem("clubUserEmail",emailAddress );
+                 
+                  var url= "/newsletter/";
+        
+                   window.location.href = url;
+                  //  $('#alert_message').html('Thank you for subscribe!');
+                  //  $('#subscribeEmail').val('');
+                }
+             //   $('#alert-modal').modal('show');
+            }
+        });
+        }
+        $(".invalid-email").fadeOut(5000);
+        
+
+    }
+    
+
+function redirectPage(url, tab_id) {
+	//alert(url);
+		try{
+        	localStorage.setItem("tab_id", tab_id);
+			}
+		catch(exception_1){
+			}
+        window.location.href = url;
+    }
+    function getArrivalData() {
+        $.ajax({
+            type: "POST",
+            url: "/site/getArrival",
+            data: 'YII_CSRF_TOKEN=RTlsXzRkZkFTMzVoZFV3TDd1S2NaNFFWY05oS19qWGWX7aZ8q6fF17anjsOpE2X-p7Py2FIZyl7av1l-Xg5LHw==',
+            success: function (data) {
+                //var result = $.parseJSON(data);
+
+                $('#arrivals_data').html(data);
+                setTimeout(function () {
+                    getArrivalData();
+                }, 60000);
+            }});
+    }
+    function getDepartureData() {
+        $.ajax({
+            type: "POST",
+            url: "/site/getDeparture",
+            data: 'YII_CSRF_TOKEN=RTlsXzRkZkFTMzVoZFV3TDd1S2NaNFFWY05oS19qWGWX7aZ8q6fF17anjsOpE2X-p7Py2FIZyl7av1l-Xg5LHw==',
+            success: function (data) {
+                //var result = $.parseJSON(data);
+                $('#departure_data').html(data);
+                setTimeout(function () {
+                    getDepartureData();
+                }, 60000);
+            }});
+    }
+
+$(function(){
+  $("body").on('hidden.bs.modal', function (e) {
+    var $iframes = $(e.target).find("iframe");
+    $iframes.each(function(index, iframe){
+      $(iframe).attr("src", $(iframe).attr("src"));
+    });
+  });
+});
+</script>
+<style>
+@media only screen and (max-width: 500px) {.topper-top .topper-text{max-width: 210px;} i.fa.fa-info-circle {top:17px !important;} }
+.main-wrapper.index {
+    position: relative;
+}
+	.topper-top{
+   
+    left:0;
+    top:0;
+    width:100%;
+    height:auto;
+    background-color:#545859;
+    color:#fff;
+    z-index:60009022;
+}
+
+
+
+
+.topper-danger{
+    background-color:#545859;
+    color:#fff;
+}
+
+
+
+.topper-top .topper-title{
+    float:left;
+    font-weight:bold;
+}
+
+.topper-top .topper-text{
+    float:left;
+    margin-left:15px;
+}
+
+.topper-top .topper-close{
+    position:absolute;
+    right:25px;
+    top:15px;
+    font-size:28px;
+    cursor:pointer;
+    transition:opacity 200ms ease;
+}
+
+.topper-top .topper-close:hover{
+    opacity:0.7;
+}
+
+.topper-top .topper-content:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+
+.topper-top .topper-content{
+    padding:25px;
+}
+i.fa.fa-info-circle {
+    font-size: 36px;
+    position: relative;
+    top: 9px;
+    line-height: 0;
+}
+.topper-text p {
+    color: #fff !important;
+}
+.topper-text a { color:white !important; text-decoration:underline !important }
+.topper-text p:nth-child(2n){display:none;}
+</style>
+<script>
+
+	if (!window.jQuery) {
+    console.error('Topper.js requires jQuery in order to work.');
+}
+
+var title, content, duration, style;
+
+function Topper(...args) {
+    var a = args[0];
+
+    title       = a.title;
+    text        = a.text;
+    duration    = a.duration;
+    type        = a.type;
+    style       = a.style;
+    autoclose   = a.autoclose;
+    autocloseMs = a.autocloseAfter;
+    style       = a.style;
+
+    switch(type) {
+        case 'top':
+            TopperTop();
+            break;
+        default:
+            console.error('^Topper.js: Unknown type "' + type + '"');
+    }
+}
+
+function TopperTop()
+{
+    var notifid = 'tjs-' + fromPool();
+
+    jQuery('<div/>', {
+        class: 'topper topper-top topper-' + style,
+        id: notifid
+    }).appendTo('body');
+
+    jQuery('<div/>', {
+        class: 'topper-content'
+    }).appendTo('#'+notifid);
+
+    $('#' + notifid).slideDown();
+
+    var prepTitle   = '<div class="topper-title">' + title + '</div>';
+    var prepText    = '<div class="topper-text">' + text + '</div>';
+    var prepClose   = '<div class="topper-close" data-target="' + notifid + '">&times;</div>';
+
+    $('#'+notifid+' .topper-content').append(prepTitle + prepText);
+    $('#'+notifid).append(prepClose);
+
+    if(autoclose == true)
+    {
+        setTimeout(function(){
+            $('#'+notifid).fadeOut(500);
+        }, autocloseMs);
+    }
+}
+
+function fromPool() {
+
+    var str = "";
+    var pool = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  
+    for (var i = 0; i < 5; i++)
+    str += pool.charAt(Math.floor(Math.random() * pool.length));
+  
+    return str;
+}
+
+
+$(document).on('click', '.topper-close', function(){
+    $('#' + $(this).data('target')).hide();
+});
+</script>
+<script>
+            window.topBarContent = '';
+		    function getTopBar() {
+                    console.log("function call getTopBar...")
+                    $.ajax({
+                        url: "/site/getTopToolbar/",
+                        type: "GET", 
+                        success: function (data)   
+                        {
+                            if (data != '') {
+                                window.topBarContent = data;
+                                
+                                $("#topBarContainer").html('<div class="topper topper-top topper-danger" id="tjs-bCA1E" style=""><div class="topper-content"><div class="topper-title"><i class="fa fa-info-circle"></i></div><div class="topper-text">'+data+'</div></div><div class="topper-close" data-target="tjs-bCA1E">×</div></div>'); 
+                                
+                            }else{
+                                window.topBarContent = "disable";
+                            }
+                        }
+                    });
+                }
+                getTopBar();  /*
+Topper({
+                			title: '<i class="fa fa-info-circle"></i>',
+                			text: window.topBarContent,
+                			style: 'danger',
+                			type: 'top',
+                			autoclose: false,
+                			
+                		});*/
+</script>
+<div id="topBarContainer"></div><script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+<body>
+<div class="main-wrapper inner">
+<header>
+<nav class="navbar navbar-default mainmenu">
+<div class="navbar-header">
+<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+<a class="navbar-brand" href="https://www.irelandwestairport.com"><img src="https://www.irelandwestairport.com/images/logo.png"></a> </div>
+<script>
+function iOS() {
+
+  var iDevices = [
+    'iPad Simulator',
+    'iPhone Simulator',
+    'iPod Simulator',
+    'iPad',
+    'iPhone',
+    'iPod'
+  ];
+
+  if (!!navigator.platform) {
+    while (iDevices.length) {
+      if (navigator.platform === iDevices.pop()){ return true; }
+    }
+  }
+
+  return false;
+}
+/*$('body').on('click', '.mega-dropdown.dropdown.open', function (e) {
+	if($(this).hasClass('openTrack')){
+	  $(this).removeClass('open');
+	  $(this).removeClass('openTrack');
+	  $(this).addClass('openTrackdone');
+  	}
+	else{
+		$(this).addClass('openTrack');
+	}
+});
+$('body').on('click', '.mega-dropdown.dropdown.openTrackdone', function (e) {
+		$(this).removeClass('openTrackdone');
+});*/
+$('body').on('click', '.mega-dropdown.dropdown', function (e) {
+	
+    
+	/*$('.mega-dropdown.dropdown').each(function(){
+            $(this).removeClass('open');
+     });*/
+	/*console.log('came in touchstart');
+    var is_safari = iOS();
+	console.log ($(this).hasClass('open'));
+   if(is_safari){
+		var doOpen = true;
+		if($(this).hasClass('open')){
+			doOpen = false;
+		}
+        $('.mega-dropdown.dropdown').each(function(){
+			console.log($(this).text()+"--"+$(this).prop('class'));
+            $(this).removeClass('open');
+        });
+		if(doOpen){
+			$(this).addClass('open');
+		}
+		
+    }*/
+    
+});
+
+</script>
+<style>
+ 
+                    header .dropdown-menu.menu1 > li.list_4 > a > .icon:before { background-image:url(/uploads/icons/icon_hover55eefdb70dede0.png); }
+                    
+                                    header .dropdown-menu.menu1 > li.list_10 > a > .icon:before { background-image:url(/uploads/icons/icon_hover55eefdc1e11cc5.png); }
+                    
+                                    header .dropdown-menu.menu1 > li.list_5 > a > .icon:before { background-image:url(/uploads/icons/icon_hover55eefddee86312.png); }
+                    
+                                    header .dropdown-menu.menu1 > li.list_9 > a > .icon:before { background-image:url(/uploads/icons/icon_hover55eefdec274435.png); }
+                    
+                                    header .dropdown-menu.menu1 > li.list_7 > a > .icon:before { background-image:url(/uploads/icons/icon_hover55eefdf7f6b75c.png); }
+                    
+                                    header .dropdown-menu.menu1 > li.list_30 > a > .icon:before { background-image:url(/uploads/icons/icon_hover5588efa70a0b7e.png); }
+                    
+                                    header .dropdown-menu.menu1 > li.list_31 > a > .icon:before { background-image:url(/uploads/icons/icon_hover55878debf8f411.png); }
+                    
+                                    header .dropdown-menu.menu1 > li.list_12 > a > .icon:before { background-image:url(/uploads/icons/icon_hover55eefe0164c89c.png); }
+                    
+                                    header .dropdown-menu.menu1 > li.list_32 > a > .icon:before { background-image:url(/uploads/icons/icon_hover55eefe04c2ea9a.png); }
+                    
+                                    header .dropdown-menu.menu1 > li.list_33 > a > .icon:before { background-image:url(/uploads/icons/icon_hover55eefe0862e0fd.png); }
+                    
+                                    header .dropdown-menu.menu1 > li.list_2 > a > .icon:before { background-image:url(/uploads/icons/icon_hover558494a4433c64.png); }
+                    
+                                    header .dropdown-menu.menu1 > li.list_25 > a > .icon:before { background-image:url(/uploads/icons/icon_hover55861303b86392.png); }
+                    
+                                    header .dropdown-menu.menu1 > li.list_26 > a > .icon:before { background-image:url(/uploads/icons/icon_hover55861308181c3c.png); }
+                    
+                                    header .dropdown-menu.menu1 > li.list_27 > a > .icon:before { background-image:url(/uploads/icons/icon_hover5586130b987212.png); }
+                    
+                                    header .dropdown-menu.menu1 > li.list_28 > a > .icon:before { background-image:url(/uploads/icons/icon_hover5586130e5054c8.png); }
+                    
+                                    header .dropdown-menu.menu1 > li.list_29 > a > .icon:before { background-image:url(/uploads/icons/icon_hover558613113c76ed.png); }
+                    
+                                    header .dropdown-menu.menu1 > li.list_17 > a > .icon:before { background-image:url(/uploads/icons/icon_hover558493a5ee0d45.png); }
+                    
+                                    header .dropdown-menu.menu1 > li.list_14 > a > .icon:before { background-image:url(/uploads/icons/icon_hover558493a36ec7ac.png); }
+                    
+                                    header .dropdown-menu.menu1 > li.list_13 > a > .icon:before { background-image:url(/uploads/icons/icon_hover558495486c8ad4.png); }
+                    
+                                    header .dropdown-menu.menu1 > li.list_15 > a > .icon:before { background-image:url(/uploads/icons/icon_hover558493a446a89c.png); }
+                    
+                                    header .dropdown-menu.menu1 > li.list_16 > a > .icon:before { background-image:url(/uploads/icons/icon_hover5589ae00618f1b.png); }
+                    
+                                    header .dropdown-menu.menu1 > li.list_18 > a > .icon:before { background-image:url(/uploads/icons/icon_hover5589adf60032ff.png); }
+                    
+                </style>
+<div class="collapse navbar-collapse js-navbar-collapse">
+<ul class="nav navbar-nav">
+<li class="dropdown mega-dropdown">
+<a href="#" onclick='return true;'>
+Flight Information<span class="caret"></span>
+</a>
+<ul class="dropdown-menu mega-dropdown-menu menu1">
+<li class=' list_4'><a class="touchhandleIOS" href="https://irelandwestairport.com/flight_information">
+<div class="icon"><img src="/uploads/icons/icon_55eefdb70debca.png" alt="Icon"></div>
+Live flight Information</a></li>
+<li class=' list_10'><a class="touchhandleIOS" href="https://www.irelandwestairport.com/flight_information/destination">
+<div class="icon"><img src="/uploads/icons/icon_55eefdc1e11aaf.png" alt="Icon"></div>
+Destinations</a></li>
+<li class=' list_5'><a class="touchhandleIOS" href="https://irelandwestairport.com/flight_information/book-flight">
+<div class="icon"><img src="/uploads/icons/icon_55eefddee860e5.png" alt="Icon"></div>
+Book Flights</a></li>
+<li class=' list_9'><a class="touchhandleIOS" href="https://irelandwestairport.com/flight_information/new-routes">
+<div class="icon"><img src="/uploads/icons/icon_55eefdec274265.png" alt="Icon"></div>
+New Routes</a></li>
+
+
+</ul>
+</li>
+<li class="dropdown mega-dropdown">
+<a href="#" onclick='return true;'>
+Car Parking<span class="caret"></span>
+</a>
+<ul class="dropdown-menu mega-dropdown-menu menu1">
+<li class=' list_7'><a class="touchhandleIOS" href="https://irelandwestairport.com/car_parking">
+<div class="icon"><img src="/uploads/icons/icon_55eefdf7f6b584.png" alt="Icon"></div>
+Book Parking Online</a></li>
+<li class=' list_30'><a class="touchhandleIOS" href="https://irelandwestairport.com/car_parking/drive-up-parking-rates">
+<div class="icon"><img src="/uploads/icons/icon_5588efa709f014.png" alt="Icon"></div>
+Drive Up Parking Rates</a></li>
+<li class=' list_31'><a class="touchhandleIOS" href="https://irelandwestairport.com/car_parking/set-down-area">
+<div class="icon"><img src="/uploads/icons/icon_55878ca6c7f61e.png" alt="Icon"></div>
+Set-Down Area</a></li>
+<li class=' list_12'><a class="touchhandleIOS" href="https://irelandwestairport.com/car_parking/car-park-map">
+<div class="icon"><img src="/uploads/icons/icon_55eefe0164c68d.png" alt="Icon"></div>
+Car Park Map</a></li>
+<li class=' list_32'><a class="touchhandleIOS" href="https://irelandwestairport.com/car_parking/PRM-and-blue-badge-parking">
+<div class="icon"><img src="/uploads/icons/icon_55eefe04c2e8a2.png" alt="Icon"></div>
+PRM And Blue Badge Parking</a></li>
+ <li class=' list_33'><a class="touchhandleIOS" href="https://irelandwestairport.com/car_parking/car-park-terms-and-conditions">
+<div class="icon"><img src="/uploads/icons/icon_55eefe0862decd.png" alt="Icon"></div>
+Terms and Conditions</a></li>
+
+
+</ul>
+</li>
+<li class="dropdown mega-dropdown">
+<a href="#" onclick='return true;'>
+At the Airport<span class="caret"></span>
+</a>
+<ul class="dropdown-menu mega-dropdown-menu menu1">
+<li class=' list_2'><a class="touchhandleIOS" href="https://www.irelandwestairport.com/at_the_airport">
+<div class="icon"><img src="/uploads/icons/icon_55eefe0a5ac889.png" alt="Icon"></div>
+Airport Shopping</a></li>
+<li class=' list_25'><a class="touchhandleIOS" href="https://www.irelandwestairport.com/at_the_airport/restaurants-and-bars">
+<div class="icon"><img src="/uploads/icons/icon_55eefe0faed44d.png" alt="Icon"></div>
+Restaurants And Bars</a></li>
+<li class=' list_26'><a class="touchhandleIOS" href="https://www.irelandwestairport.com/at_the_airport/facilities-and-services">
+<div class="icon"><img src="/uploads/icons/icon_55eefe17e8d6d4.png" alt="Icon"></div>
+Facilities And Services</a></li>
+<li class=' list_27'><a class="touchhandleIOS" href="https://www.irelandwestairport.com/at_the_airport/security-and-customs">
+<div class="icon"><img src="/uploads/icons/icon_55eefe1b3ac114.png" alt="Icon"></div>
+Security And Customs</a></li>
+<li class=' list_28'><a class="touchhandleIOS" href="https://www.irelandwestairport.com/at_the_airport/terminal-map">
+<div class="icon"><img src="/uploads/icons/icon_55eefe1c1bbfc9.png" alt="Icon"></div>
+Terminal Map</a></li>
+<li class=' list_29'><a class="touchhandleIOS" href="https://www.irelandwestairport.com/at_the_airport/special-assistance">
+<div class="icon"><img src="/uploads/icons/icon_55eefe1e43900d.png" alt="Icon"></div>
+Special Assistance</a></li>
+
+
+</ul>
+</li>
+<li class="dropdown mega-dropdown">
+<a href="#" onclick='return true;'>
+Directions & Transport<span class="caret"></span>
+</a>
+<ul class="dropdown-menu mega-dropdown-menu menu1">
+<li class=' list_17'><a class="touchhandleIOS" href="https://irelandwestairport.com/direction_and_transport/by-car">
+<div class="icon"><img src="/uploads/icons/icon_55eefe220c6adb.png" alt="Icon"></div>
+By Car</a></li>
+<li class=' list_14'><a class="touchhandleIOS" href="https://irelandwestairport.com/direction_and_transport/by-bus">
+<div class="icon"><img src="/uploads/icons/icon_55eefe24409fd0.png" alt="Icon"></div>
+By Bus</a></li>
+<li class=' list_13'><a class="touchhandleIOS" href="https://irelandwestairport.com/direction_and_transport/by-train">
+<div class="icon"><img src="/uploads/icons/icon_55eefe2695d30f.png" alt="Icon"></div>
+By Train</a></li>
+<li class=' list_15'><a class="touchhandleIOS" href="https://irelandwestairport.com/direction_and_transport/car-hire">
+<div class="icon"><img src="/uploads/icons/icon_55eefe27cdef48.png" alt="Icon"></div>
+Car Hire</a></li>
+<li class=' list_16'><a class="touchhandleIOS" href="https://irelandwestairport.com/direction_and_transport/airport-cabs">
+<div class="icon"><img src="/uploads/icons/icon_5589ae00618b36.png" alt="Icon"></div>
+Airport Cabs</a></li>
+<li class=' list_18'><a class="touchhandleIOS" href="https://irelandwestairport.com/direction_and_transport/journey-planner">
+<div class="icon"><img src="/uploads/icons/icon_5589adf6002f17.png" alt="Icon"></div>
+Journey Planner </a></li>
+
+
+</ul>
+</li>
+<li><a href="http://irelandwestairport.com/development_fee">Development Fee</a></li>
+</ul>
+</div> </nav>
+</header>
+<link rel='stylesheet' href='/css/style-map.css' type='text/css' media='all' />
+<style>
+            .main-menu-tabs.flight-info .nav-tabs > li.list_4 > a > .icon:before {
+                background-image: url(/uploads/icons/icon_hover55eefdb70dede0.png);
+            }
+            //header .dropdown-menu.menu1 > li.list_4 > a > .icon:before { background-image:url(/uploads/icons/icon_hover55eefdb70dede0.png); }
+                                                                                                    
+                    .main-menu-tabs.flight-info .nav-tabs > li.list_10 > a > .icon:before {
+                background-image: url(/uploads/icons/icon_hover55eefdc1e11cc5.png);
+            }
+            //header .dropdown-menu.menu1 > li.list_10 > a > .icon:before { background-image:url(/uploads/icons/icon_hover55eefdc1e11cc5.png); }
+                                                                                                    
+                    .main-menu-tabs.flight-info .nav-tabs > li.list_5 > a > .icon:before {
+                background-image: url(/uploads/icons/icon_hover55eefddee86312.png);
+            }
+            //header .dropdown-menu.menu1 > li.list_5 > a > .icon:before { background-image:url(/uploads/icons/icon_hover55eefddee86312.png); }
+                                                                                                    
+                    .main-menu-tabs.flight-info .nav-tabs > li.list_9 > a > .icon:before {
+                background-image: url(/uploads/icons/icon_hover55eefdec274435.png);
+            }
+            //header .dropdown-menu.menu1 > li.list_9 > a > .icon:before { background-image:url(/uploads/icons/icon_hover55eefdec274435.png); }
+                                                                                                    
+        </style>
+<section class="content main-menu-tabs flight-info">
+<div class="container-fluid">
+<div class="row banr-bar">
+<div class="box-table">
+<div class="box-cell">
+<h2>Flight Information</h2>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container-fluid" id="myTab-grp">
+<div class="row tab-head">
+<div class="container" id="tabMenuLarge">
+<ul class="nav nav-tabs nav-tabs-head">
+<li class="list_4 active "><a id="" class="tab_4" data-toggle="tab" href="#menu4">
+<div class="icon"><img src="/uploads/icons/icon_55eefdb70debca.png" alt="Icon"></div>Live flight Information</a></li>
+<li class="list_10  "><a id="" class="tab_10" data-toggle="tab" href="#menu10">
+<div class="icon"><img src="/uploads/icons/icon_55eefdc1e11aaf.png" alt="Icon"></div>Destinations</a></li>
+<li class="list_5  "><a id="" class="tab_5" data-toggle="tab" href="#menu5">
+<div class="icon"><img src="/uploads/icons/icon_55eefddee860e5.png" alt="Icon"></div>Book Flights</a></li>
+<li class="list_9  "><a id="" class="tab_9" data-toggle="tab" href="#menu9">
+<div class="icon"><img src="/uploads/icons/icon_55eefdec274265.png" alt="Icon"></div>New Routes</a></li>
+</ul>
+</div>
+</div>
+<div class="row tab-content head-content">
+<div id="menu4" class="tab-pane fade ">
+<div class="flyt-detail">
+<div class="container">
+<div class="row tabs-vertical">
+<div class="col-md-2">
+<div class="tabs">
+<ul class="nav nav-tabs">
+<li class="active"><a href="#tab1" data-toggle="tab">Arrivals</a></li>
+<li><a href="#tab2" data-toggle="tab">Departures</a></li>
+</ul>
+</div>
+</div>
+<div class="col-md-10">
+<div class="tab-content">
+<div id="tab1" class="tab-pane fade in active">
+<div class="myTable table-responsive">
+<table class="table">
+<thead>
+<tr>
+<th>Airline</th>
+<th>Flight</th>
+<th>Time</th>
+<th>Origin</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody id="arrivals_data">
+<tr>
+<td class="airline"> Aer Lingus </td>
+<td class="flight">EI0911</td>
+<td class="time">14:35</td>
+<td class="origin">LONDON GATWICK</td>
+
+<td class="status">Landed 1409<strong> </strong></td>
+
+</tr>
+<tr>
+<td class="airline"> Ryanair </td>
+<td class="flight">FR805</td>
+<td class="time">09:35</td>
+<td class="origin">LONDON STANSTED</td>
+
+<td class="status"><strong> </strong></td>
+
+</tr>
+<tr>
+<td class="airline"> Ryanair </td>
+<td class="flight">FR890</td>
+<td class="time">12:15</td>
+<td class="origin">EDINBURGH</td>
+
+<td class="status"><strong> </strong></td>
+
+</tr>
+<tr>
+<td class="airline"> Aer Lingus </td>
+<td class="flight">EI0911</td>
+<td class="time">14:35</td>
+<td class="origin">LONDON GATWICK</td>
+
+ <td class="status"><strong> </strong></td>
+
+</tr>
+<tr>
+<td class="airline"> Ryanair </td>
+<td class="flight">FR6673</td>
+<td class="time">14:55</td>
+<td class="origin">LIVERPOOL</td>
+
+<td class="status"><strong> </strong></td>
+
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="tab2" class="tab-pane fade">
+<div class="myTable table-responsive">
+<table class="table">
+<thead>
+<tr>
+<th>Airline</th>
+<th>Flight</th>
+<th>Time</th>
+<th>Destination</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody id="departure_data">
+<tr>
+<td class="airline"> Aer Lingus </td>
+<td class="flight">EI0912</td>
+<td class="time">15:10</td>
+<td class="origin">LONDON GATWICK </td>
+
+<td class="status">Departed 1502<strong> </strong></td>
+
+</tr>
+<tr>
+<td class="airline"> Ryanair </td>
+<td class="flight">FR806</td>
+<td class="time">10:00</td>
+<td class="origin">LONDON STANSTED </td>
+
+<td class="status"><strong> </strong></td>
+
+</tr>
+ <tr>
+<td class="airline"> Ryanair </td>
+<td class="flight">FR891</td>
+<td class="time">12:40</td>
+<td class="origin">EDINBURGH </td>
+
+<td class="status"><strong> </strong></td>
+
+</tr>
+<tr>
+<td class="airline"> Aer Lingus </td>
+<td class="flight">EI0912</td>
+<td class="time">15:10</td>
+<td class="origin">LONDON GATWICK </td>
+
+<td class="status"><strong> </strong></td>
+
+</tr>
+<tr>
+<td class="airline"> Ryanair </td>
+<td class="flight">FR6674</td>
+<td class="time">15:25</td>
+<td class="origin">LIVERPOOL </td>
+
+<td class="status"><strong> </strong></td>
+
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="menu10" class="tab-pane fade ">
+<div class="container-fluid" id="myTab-grp">
+<div class="row tab-content head-content">
+<div id="demo2-map1" class="" style="padding-bottom: 50px;">
+<div class="container-fluid" style="padding:0;">
+<div class="col-sm-12 map">
+<div class="col-sm-12">
+<div class="title">
+<h1>Where can I fly?</h1>
+<p>Check out the destinations from Ireland West Airport</p>
+</div>
+</div>
+<div class="clear">
+<div class="container">
+</div>
+<div class="tab-content1">
+<div role="tabpanel" class="tab-pane active" id="demo2-map" style="padding-bottom: 50px;">
+<ul class="list-inline" style="overflow:visible;">
+</ul>
+<div class="clearfix"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+</div></div>
+<div id="menu5" class="tab-pane fade">
+<div class="container-fluid" id="myTab-grp">
+<div class="row tab-content head-content">
+<div id="demo2-map1" class="" style="padding-bottom: 50px;">
+<div class="container-fluid" style="padding:0;">
+<div class="col-sm-12 map">
+<div class="col-sm-12">
+<div class="title">
+<h1>Where can I fly?</h1>
+<p>Check out the destinations from Ireland West Airport</p>
+</div>
+</div>
+<div class="clear">
+<div class="container">
+</div>
+<div class="tab-content1">
+<div role="tabpanel" class="tab-pane active" id="demo2-map" style="padding-bottom: 50px;">
+<ul class="list-inline" style="overflow:visible;">
+</ul>
+<div class="clearfix"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+</div></div>
+<div id="menu9" class="tab-pane fade">
+<section class="content new-route">
+<style>
+    #owl-route .item .caption{
+        width: 100%;
+    }
+    #owl-route .item{
+        padding: 0px;
+    }
+    .banr-bar {
+        margin-bottom: 0px;
+    }
+</style>
+<div class="container-fluid">
+<div class="row">
+<div id="owl-route" class="owl-carousel22">
+<div class="item" style="background-image:url(/uploads/content_pages_images/13-edinburg.jpg);">
+<div class="caption">
+<div class="box-cell">
+<h4>Featured Destination</h4>
+<h2>Edinburgh</h2>
+<p>Fly to beautiful Edinburgh twice weekly from September with Ryanair</p>
+<a data-toggle="modal" data-target="#myModal-info13" class="btn-more">More Information</a>
+</div>
+</div>
+</div>
+<div class="item" style="background-image:url(/uploads/content_pages_images/15-manchester.jpg);">
+<div class="caption">
+<div class="box-cell">
+<h4>Featured Destination</h4>
+<h2>Manchester</h2>
+<p>Fly to Manchester twice weekly from September with Ryanair</p>
+<a data-toggle="modal" data-target="#myModal-info15" class="btn-more">More Information</a>
+</div>
+</div>
+</div>
+<div class="item" style="background-image:url(/uploads/content_pages_images/7-mallorca-port-de-soller-panorama.jpg);">
+<div class="caption">
+<div class="box-cell">
+<h4>Featured Destination</h4>
+<h2>Palma Majorca</h2>
+<p>New weekly service to Palma Majorca with Ryanair</p>
+<a data-toggle="modal" data-target="#myModal-info7" class="btn-more">More Information</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="myModal-info13" class="modal fade new-route" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body">
+<figure>
+<img src="/uploads/content_pages_images/13-edinburg.jpg" class="img-responsive" alt="Image">
+</figure>
+ <figcaption>
+<h4>Edinburgh</h4>
+<p>With the city&rsquo;s skyline, cobbled streets and colourful characters as your backdrop, your favourite memories happened right here.&nbsp; There&rsquo;s so many ways to embrace the beautiful city of Edinburgh with direct flights from Ireland West Airport with Ryanair.</p>
+<p>Visit Edinburgh and discover a city like no other. Steeped in history, Edinburgh seamlessly blends old and new, providing locals with the perfect destination to experience the sights, sounds and tastes of a diverse and vibrant city.</p>
+<p>Book flights to Edinburgh from Ireland West Airport with Ryanair&nbsp;and you&#39;ll find there are plenty of exciting things to do in this beautiful city, with stunning architecture, endless winding streets and an awe-inspiring castle perched on a dormant volcano, there&#39;s nowhere else quite like it.</p>
+<p>Starting on September 1st flights operate every Wednesday and Sunday with Ryanair and will operate all year round. Book cheap flights now to Edinburgh from Ireland West Airport on <a href="http://ryanair.com" target="_blank">ryanair.com</a></p>
+</figcaption>
+</div>
+</div>
+</div>
+</div>
+<div id="myModal-info15" class="modal fade new-route" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body">
+<figure>
+<img src="/uploads/content_pages_images/15-manchester.jpg" class="img-responsive" alt="Image">
+</figure>
+<figcaption>
+<h4>Manchester</h4>
+<p>From the world&rsquo;s first industrial city to a multicultural urban paradise, a Manchester visit is rich in cultural highlights, with the Transport, People&rsquo;s History and Science &amp; Industry museums offering a great insight into the area&rsquo;s history. Now just an hour from the West of&nbsp;Ireland with a new direct flight to Manchester by Ryanair from Ireland West Airport</p>
+<p>A city steeped in sporting glory, take a tour around England&rsquo;s National Football Museum or the world famous football stadium, Old Trafford. Food lovers will love the vast selection on offer, and no trip to Manchester would be complete without a trip to Rusholme&rsquo;s curry mile, which features around 70 different Indian restaurants. On the cusp of the Cheshire countryside, start making your plans to visit Manchester and enjoy the fruits of the north-west&rsquo;s premier city first-hand.</p>
+<p>You can now fly direct to Manchester twice weekly from September 3rd 2021 on Mondays and Fridays thanks to a new flight with Ryanair from Ireland West Airport. Book now on <a href="http://ryanair.com" target="_blank">ryanair.com</a></p>
+</figcaption>
+</div>
+</div>
+</div>
+</div>
+<div id="myModal-info7" class="modal fade new-route" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body">
+<figure>
+<img src="/uploads/content_pages_images/7-mallorca-port-de-soller-panorama.jpg" class="img-responsive" alt="Image">
+ </figure>
+<figcaption>
+<h4>Palma Majorca</h4>
+<p>Majorca is home to the popular resorts of Santa Ponsa, Alcudia and Palma Nova, whilst also boasting the impressive capital of Palma.&nbsp; Majorca has been always been a firm favourite and now it will be even easier for holidaymakers in the West of Ireland to get there from&nbsp;their doorstep. It is a superb destination for families, couples and singles alike.</p>
+<p>With weekly flights with Ryanair, holidaymakers throughout the West of Ireland now have the opportunity to discover the most well-known Balearic isle direct from their local airport. Book flights to Majorca from Ireland West Airport&nbsp;on <a href="http://www.ryanair.com" target="_blank">www.ryanair.com</a></p>
+</figcaption>
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12 col-xs-12">
+</div>
+<div class="col-md-12 col-xs-12">
+
+</div>
+</div>
+</div>
+</section>
+<script type="text/javascript">
+$("#owl-route").owlCarousel({
+    //Autoplay
+    items: 1,
+                itemsCustom: false,
+                itemsDesktop: [1199, 1],
+                itemsDesktopSmall: [991, 1],
+                itemsTablet: [768, 1],
+                itemsTabletSmall: false,
+                itemsMobile: [480, 1],
+                navigation: false,
+                navigationText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+                pagination: true,
+                paginationNumbers: 3,
+                transitionStyle: "fade",
+                autoPlay: true,
+
+});
+</script> </div>
+</div>
+</div>
+<div id="myModal" class="modal fade" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-body">
+<p>Some text in the modal.</p>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<style>
+    .main-menu-tabs.development .tab-head .nav-tabs.nav-tabs-head > li{height:85px;}
+.main-menu-tabs.development .tab-head .nav-tabs.nav-tabs-head > li > a{padding:10px 10px;}
+.development .fly_top,
+.directions .fly_top{margin-bottom:30px;}
+.development .widget-image-with-copy-copy.with-btn.rich-text p{margin:0 0 15px;margin-left:0 !important;font-family:'Source Sans Pro', sans-serif;font-size:15px;line-height:25px;color:#555;}
+.development .widget-image-with-copy-copy.with-btn.rich-text ul li{list-style-type:none;margin:0 0 15px;margin-left:0 !important;font-family:'Source Sans Pro', sans-serif;font-size:15px;line-height:25px;color:#555;position:relative}
+.development .widget-image-with-copy-copy.with-btn.rich-text ul li:before{position:absolute;content:"\f105";color:#999;font-size:20px;font-family:FontAwesome;left:-15px;top:0}
+.development.main-menu-tabs .tab-head .nav-tabs > li > a > .icon > img{width:30px;}
+.development.main-menu-tabs .tab-head .nav-tabs > li > a > .icon:before{background-size:30px 30px;}
+ #myAccordion-grp{display:none;padding-top:15px;background-color:#eaeaea;}
+ #accordion .panel{border-radius:0;}
+ .panel-default > .panel-heading {background-color:#FFF;border:0;padding:0;}
+.panel-title > a {display:block;padding:13px 15px;font:15px 'source_m';}
+ #accordion .panel .panel-heading{background-color:#FFF;border:0;padding:0;}
+#accordion .panel .panel-heading a{display:block;padding:13px 15px;font:15px 'source_m';}
+ #accordion .panel .panel-body{border:0;padding:0;}
+ #accordion .panel .panel-heading a.active-g{background-color:#60b353;color:#FFF;}
+@media screen and (max-width:767px){.main-menu-tabs #myAccordion-grp{display:block;}
+    
+</style>
+<div class="container-fluid" id="myAccordion-grp" style="display:none;">
+<div class="">
+<div class="panel-group" id="accordion">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h4 class="panel-title panel-title-link">
+<a data-toggle="collapse" style="background-color:#60b353;color:#FFF;" data-parent="#accordion" href="#collapse4" class="active-g tab_4">Live flight Information</a>
+</h4>
+</div>
+<div id="collapse4" class="panel-collapse collapse in">
+<div class="panel-body">
+<div class="flyt-detail">
+<div class="container">
+<div class="row tabs-vertical">
+<div class="col-md-3">
+<div class="tabs">
+<ul class="nav nav-tabs">
+<li class="active"><a href="#tab-small-1" data-toggle="tab">Arrivals</a></li>
+<li><a href="#tab-small-2" data-toggle="tab">Departures</a></li>
+</ul>
+</div>
+</div>
+<div class="col-md-9">
+<div class="tab-content">
+<div id="tab-small-1" class="tab-pane fade in active">
+<div class="myTable table-responsive">
+<table class="table myrestable">
+<thead>
+<tr>
+<th>Airline</th>
+<th>Flight</th>
+<th>Time</th>
+<th>Origin</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody id="arrivals_data">
+ <tr>
+<td class="airline"> Aer Lingus
+
+</td>
+<td class="flight">EI0911</td>
+<td class="time">14:35</td>
+<td class="origin">LONDON GATWICK</td>
+
+<td class="status">Landed 1409<strong> </strong></td>
+
+</tr>
+<tr>
+<td class="airline"> Ryanair
+
+</td>
+<td class="flight">FR805</td>
+<td class="time">09:35</td>
+<td class="origin">LONDON STANSTED</td>
+
+<td class="status"><strong> </strong></td>
+
+</tr>
+<tr>
+<td class="airline"> Ryanair
+
+</td>
+<td class="flight">FR890</td>
+<td class="time">12:15</td>
+<td class="origin">EDINBURGH</td>
+
+<td class="status"><strong> </strong></td>
+
+</tr>
+ <tr>
+<td class="airline"> Aer Lingus
+
+</td>
+<td class="flight">EI0911</td>
+<td class="time">14:35</td>
+<td class="origin">LONDON GATWICK</td>
+
+<td class="status"><strong> </strong></td>
+
+</tr>
+<tr>
+<td class="airline"> Ryanair
+
+</td>
+<td class="flight">FR6673</td>
+<td class="time">14:55</td>
+<td class="origin">LIVERPOOL</td>
+
+<td class="status"><strong> </strong></td>
+
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="tab-small-2" class="tab-pane fade">
+<div class="myTable table-responsive">
+<table class="table myrestable">
+<thead>
+<tr>
+<th>Airline</th>
+<th>Flight</th>
+<th>Time</th>
+<th>Destination</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody id="departure_data">
+<tr>
+<td class="airline">  Aer Lingus
+
+</td>
+<td class="flight">EI0912</td>
+<td class="time">15:10</td>
+<td class="origin">LONDON GATWICK </td>
+
+<td class="status">Departed 1502<strong> </strong></td>
+
+</tr>
+<tr>
+<td class="airline"> Ryanair
+
+</td>
+<td class="flight">FR806</td>
+<td class="time">10:00</td>
+<td class="origin">LONDON STANSTED </td>
+
+<td class="status"><strong> </strong></td>
+
+</tr>
+<tr>
+<td class="airline"> Ryanair
+
+</td>
+<td class="flight">FR891</td>
+<td class="time">12:40</td>
+<td class="origin">EDINBURGH </td>
+
+<td class="status"><strong> </strong></td>
+
+</tr>
+<tr>
+<td class="airline">  Aer Lingus
+
+</td>
+<td class="flight">EI0912</td>
+<td class="time">15:10</td>
+<td class="origin">LONDON GATWICK </td>
+
+<td class="status"><strong> </strong></td>
+
+</tr>
+<tr>
+<td class="airline"> Ryanair
+
+</td>
+<td class="flight">FR6674</td>
+<td class="time">15:25</td>
+<td class="origin">LIVERPOOL </td>
+
+<td class="status"><strong> </strong></td>
+
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h4 class="panel-title panel-title-link">
+<a data-toggle="collapse" href="#collapse10" class="tab_10"> Destinations</a>
+</h4>
+</div>
+<div id="collapse10" class="panel-collapse collapse ">
+<div class="panel-body" id='mobile_map'>
+
+<style>
+    .map .list-inline .destination_map img{   width: auto;}
+    
+</style>
+<div class="container-fluid" id="myAccordion-grp" style="display:none;">
+<div class="">
+<div class="panel-group" id="accordion">
+<div class="panel panel-default">
+<div class="panel-body" id='mobile_map'>
+<div id="demo2-map1" class="" style="padding-bottom: 50px;">
+<div class="container-fluid" style="padding:0;">
+<div class="col-sm-12 map">
+<div class="col-sm-12">
+<div class="title">
+<h1>Where can I fly?</h1>
+<p>Check out the destinations from Ireland West Airport</p>
+</div>
+</div>
+<div class="clear">
+<div class="container">
+</div>
+<div class="tab-content1">
+<div role="tabpanel" class="tab-pane active" id="demo2-map" style="padding-bottom: 50px;">
+<ul class="list-inline" style="overflow:visible;">
+</ul>
+<div class="clearfix"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h4 class="panel-title panel-title-link">
+<a data-toggle="collapse" href="#collapse5" class="tab_5"> Book Flights</a>
+</h4>
+</div>
+<div id="collapse5" class="panel-collapse collapse ">
+
+<style>
+    .map .list-inline .destination_map img{   width: auto;}
+    
+</style>
+<div class="container-fluid" id="myAccordion-grp" style="display:none;">
+<div class="">
+<div class="panel-group" id="accordion">
+<div class="panel panel-default">
+<div class="panel-body" id='mobile_map'>
+<div id="demo2-map1" class="" style="padding-bottom: 50px;">
+<div class="container-fluid" style="padding:0;">
+<div class="col-sm-12 map">
+<div class="col-sm-12">
+<div class="title">
+<h1>Where can I fly?</h1>
+<p>Check out the destinations from Ireland West Airport</p>
+</div>
+</div>
+<div class="clear">
+<div class="container">
+</div>
+<div class="tab-content1">
+<div role="tabpanel" class="tab-pane active" id="demo2-map" style="padding-bottom: 50px;">
+<ul class="list-inline" style="overflow:visible;">
+</ul>
+<div class="clearfix"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div> 
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h4 class="panel-title panel-title-link">
+<a data-toggle="collapse" href="#collapse9" class="tab_9"> New Routes</a>
+</h4>
+</div>
+<div id="collapse9" class="panel-collapse collapse ">
+<div class="panel-body">
+<section class="content new-route">
+<style>
+    #owl-route .item .caption{
+        width: 100%;
+    }
+    #owl-route .item{
+        padding: 0px;
+    }
+    .banr-bar {
+        margin-bottom: 0px;
+    }
+</style>
+<div class="container-fluid">
+<div class="row">
+<div id="owl-route" class="owl-carousel22">
+<div class="item" style="background-image:url(/uploads/content_pages_images/13-edinburg.jpg);">
+<div class="caption">
+<div class="box-cell">
+<h4>Featured Destination</h4>
+<h2>Edinburgh</h2>
+<p>Fly to beautiful Edinburgh twice weekly from September with Ryanair</p>
+<a data-toggle="modal" data-target="#myModal-info13" class="btn-more">More Information</a>
+</div>
+</div>
+</div>
+<div class="item" style="background-image:url(/uploads/content_pages_images/15-manchester.jpg);">
+<div class="caption">
+<div class="box-cell">
+<h4>Featured Destination</h4>
+<h2>Manchester</h2>
+<p>Fly to Manchester twice weekly from September with Ryanair</p>
+<a data-toggle="modal" data-target="#myModal-info15" class="btn-more">More Information</a>
+</div>
+</div>
+</div>
+<div class="item" style="background-image:url(/uploads/content_pages_images/7-mallorca-port-de-soller-panorama.jpg);">
+<div class="caption">
+<div class="box-cell">
+<h4>Featured Destination</h4>
+<h2>Palma Majorca</h2>
+<p>New weekly service to Palma Majorca with Ryanair</p>
+<a data-toggle="modal" data-target="#myModal-info7" class="btn-more">More Information</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="myModal-info13" class="modal fade new-route" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body">
+<figure>
+<img src="/uploads/content_pages_images/13-edinburg.jpg" class="img-responsive" alt="Image">
+</figure>
+<figcaption>
+<h4>Edinburgh</h4>
+<p>With the city&rsquo;s skyline, cobbled streets and colourful characters as your backdrop, your favourite memories happened right here.&nbsp; There&rsquo;s so many ways to embrace the beautiful city of Edinburgh with direct flights from Ireland West Airport with Ryanair.</p>
+<p>Visit Edinburgh and discover a city like no other. Steeped in history, Edinburgh seamlessly blends old and new, providing locals with the perfect destination to experience the sights, sounds and tastes of a diverse and vibrant city.</p>
+<p>Book flights to Edinburgh from Ireland West Airport with Ryanair&nbsp;and you&#39;ll find there are plenty of exciting things to do in this beautiful city, with stunning architecture, endless winding streets and an awe-inspiring castle perched on a dormant volcano, there&#39;s nowhere else quite like it.</p>
+<p>Starting on September 1st flights operate every Wednesday and Sunday with Ryanair and will operate all year round. Book cheap flights now to Edinburgh from Ireland West Airport on <a href="http://ryanair.com" target="_blank">ryanair.com</a></p>
+</figcaption>
+</div>
+</div>
+</div>
+</div>
+<div id="myModal-info15" class="modal fade new-route" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body">
+<figure>
+<img src="/uploads/content_pages_images/15-manchester.jpg" class="img-responsive" alt="Image">
+</figure>
+<figcaption>
+<h4>Manchester</h4>
+<p>From the world&rsquo;s first industrial city to a multicultural urban paradise, a Manchester visit is rich in cultural highlights, with the Transport, People&rsquo;s History and Science &amp; Industry museums offering a great insight into the area&rsquo;s history. Now just an hour from the West of&nbsp;Ireland with a new direct flight to Manchester by Ryanair from Ireland West Airport</p>
+<p>A city steeped in sporting glory, take a tour around England&rsquo;s National Football Museum or the world famous football stadium, Old Trafford. Food lovers will love the vast selection on offer, and no trip to Manchester would be complete without a trip to Rusholme&rsquo;s curry mile, which features around 70 different Indian restaurants. On the cusp of the Cheshire countryside, start making your plans to visit Manchester and enjoy the fruits of the north-west&rsquo;s premier city first-hand.</p>
+<p>You can now fly direct to Manchester twice weekly from September 3rd 2021 on Mondays and Fridays thanks to a new flight with Ryanair from Ireland West Airport. Book now on <a href="http://ryanair.com" target="_blank">ryanair.com</a></p>
+</figcaption>
+</div>
+</div>
+</div>
+</div>
+<div id="myModal-info7" class="modal fade new-route" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body">
+<figure>
+<img src="/uploads/content_pages_images/7-mallorca-port-de-soller-panorama.jpg" class="img-responsive" alt="Image">
+</figure>
+<figcaption>
+<h4>Palma Majorca</h4>
+<p>Majorca is home to the popular resorts of Santa Ponsa, Alcudia and Palma Nova, whilst also boasting the impressive capital of Palma.&nbsp; Majorca has been always been a firm favourite and now it will be even easier for holidaymakers in the West of Ireland to get there from&nbsp;their doorstep. It is a superb destination for families, couples and singles alike.</p>
+<p>With weekly flights with Ryanair, holidaymakers throughout the West of Ireland now have the opportunity to discover the most well-known Balearic isle direct from their local airport. Book flights to Majorca from Ireland West Airport&nbsp;on <a href="http://www.ryanair.com" target="_blank">www.ryanair.com</a></p>
+</figcaption>
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12 col-xs-12">
+</div>
+<div class="col-md-12 col-xs-12">
+
+</div>
+</div>
+</div>
+</section>
+<script type="text/javascript">
+$("#owl-route").owlCarousel({
+    //Autoplay
+    items: 1,
+                itemsCustom: false,
+                itemsDesktop: [1199, 1],
+                itemsDesktopSmall: [991, 1],
+                itemsTablet: [768, 1],
+                itemsTabletSmall: false,
+                itemsMobile: [480, 1],
+                navigation: false,
+                navigationText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+                pagination: true,
+                paginationNumbers: 3,
+                transitionStyle: "fade",
+                autoPlay: true,
+
+});
+</script> </div>
+</div>
+</div>
+</div>
+</div>
+</div></section>
+<script type="text/javascript">
+    var is_mobile = false;
+    if ($('#myTab-grp').css('display') == 'none') {
+        is_mobile = true;
+       // getSkyscanner('skyscanner_small');
+        jQuery.getScript("https://whitelabel.skyscanner.net/scripts/widget/sswidget.load.v1.min.js?host=search.irelandwestairport.com&redirect=http://search.irelandwestairport.com&product=flights&type=large&deferred=false&language=en-GB&newWindow=true&container=skyscanner_small");
+        
+    }else{
+        jQuery.getScript("https://whitelabel.skyscanner.net/scripts/widget/sswidget.load.v1.min.js?host=search.irelandwestairport.com&redirect=http://search.irelandwestairport.com&product=flights&type=large&deferred=false&language=en-GB&newWindow=true&container=skyscanner_small&container=menu5");
+    }
+    
+    
+      var is_mobile = false;
+    if ($('#myTab-grp').css('display') == 'none') {
+        is_mobile = true;
+        $('#menu10').remove();
+        $('#menu9').remove();
+    }else{
+        $('#mobile_map').remove();
+        $('#collapse9').remove();
+    }
+
+    
+    
+     $(window).load(function() { 
+    
+  $('#menu10').attr('class','tab-pane fade');
+
+$('#menu4').attr('class','tab-pane fade active in');
+    
+    });
+
+  
+    
+    
+ 
+    setTimeout(function () {
+        getArrivalData();
+        getDepartureData();
+    }, 60000);
+//========================== Accordian Active Panel ============================//
+
+    $('.panel-title-link a').click(function (e) {
+        e.preventDefault();
+        $('.panel-title a').removeClass('active-g');
+        $(this).addClass('active-g');
+    });
+    
+   
+</script> </div>
+<footer>
+<div class="container-fluid footer_main">
+<div class="col-sm-12 menu_foot" style="display:none;">
+<ul>
+<li><a href="#">Car Park Terms &amp; Conditions</a></li>
+<li><a href="#">Cookie Policy</a></li>
+</ul>
+</div>
+<div class="container">
+<div class="row tabs_sec">
+<div class="col-sm-3">
+<div id="accordion1" role="tablist" aria-multiselectable="true">
+<div class="panel panel-default">
+<div class="panel-heading" role="tab" id="headingOne">
+<h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion1" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">STAY IN TOUCH</a> </h4>
+</div>
+<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+<ul>
+<li><a href="/contact_us">Contact Us</a></li>
+<li><a href="/newsletter">Email Newsletter</a></li>
+<li><a href="/flight_information/destination">Destinations and Airlines</a></li>
+<li><a href="/airline_contact_details">Partner Contact Details</a></li>
+<li><a href="/media_centre/get-social">Get Social</a></li>
+<li><a href="/blog">Our Blog</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-3">
+<div class="panel panel-default">
+<div class="panel-heading" role="tab" id="headingTwo">
+<h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion4" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">ABOUT US</a> </h4>
+</div>
+<div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
+<ul>
+<li><a href="/about_us">Company Information</a></li>
+<li><a href="/about_us/community-charity">Community</a></li>
+<li><a href="/media_centre">Media Centre</a></li>
+<li><a href="/business_with_us/airport-advertising">Advertise with Us</a></li>
+<li><a href="/business_with_us/corporate-aviation">Corporate Aviation</a></li>
+<li><a href="/about_us/careers">Careers</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-sm-3">
+<div id="accordion2" role="tablist" aria-multiselectable="true">
+<div class="panel panel-default">
+<div class="panel-heading" role="tab" id="headingThree">
+<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion2" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">HELP AND ADVICE</a></h4>
+</div>
+<div id="collapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
+<ul>
+<li><a href="/at_the_airport/special-assistance">Special Assistance</a></li>
+<li><a href="/at_the_airport/terminal-map">Airport Maps</a></li>
+<li><a href="/car_parking/car-park-map">Car Park Maps</a></li>
+<li><a target="_blank" href="https://prebook.irelandwestairport.com/site/faq">Car Park FAQ’s</a></li>
+<li><a href="/contact_us#lost-baggage">Lost Baggage &amp; Property</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-3">
+<div id="accordion3" role="tablist" aria-multiselectable="true">
+<div class="panel panel-default">
+<div class="panel-heading" role="tab" id="headingFour">
+<h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion3" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">POPULAR PAGES</a> </h4>
+</div>
+<div id="collapseFour" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFour">
+<ul>
+<li><a href="/flight_information/book-flight">Book Flights</a></li>
+<li><a href="/car_parking">Book Car Parking</a></li>
+<li><a href="/viewPage/executive_lounge">Book Executive Lounge</a></li>
+<li><a href="/flight_information">Live Flight Information</a></li>
+<li><a href="/flight_information/destination">Destination Guide</a></li>
+<li><a href="/competition">Competitions</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container col-sm-12 menu_foot ">
+<p class="address1">Co. Mayo, Ireland. F12 P8P9</p>
+<ul>
+ <li><a href="/privacy">Privacy Policy</a></li>
+<li><a href="/accessibility">Accessibility</a></li>
+<li><a href="/disclaimer">Disclaimer</a></li>
+<li><a href="/VoluntaryReporting">Voluntary Reporting</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="container-fluid footer_bottom">
+<div class="col-lg-9 col-sm-9 col-md-9 col-xs-12">
+<p>Copyright &copy; <a href="/">IRELAND WEST AIRPORT.</a> All Right Reserved.</p>
+</div>
+<div class="col-lg-3 col-sm-3 col-md-3 col-xs-12 top-bar">
+<ul class="list-inline ft-social">
+<li><a href="https://www.facebook.com/IrelandWestKnock/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+<li><a href="https://twitter.com/Irelandwest" target="_blank"><i class="fa fa-twitter"></i></a></li>
+<li><a href="https://www.instagram.com/irelandwestairport/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+<li><a href="https://www.youtube.com/channel/UCNtBVIhrWI3wEBwhZxjHfVA" target="_blank"><i class="fa fa-youtube"></i></a></li>
+</ul>
+</div>
+</div>
+</footer>
+<script src="/js/jquery.mCustomScrollbar.js" type="text/javascript"></script>
+
+<script src="https://www.google.com/recaptcha/api.js?render=6Lf2FHQcAAAAAOCfVicCFFxcC6e_vqzCWSVR587n" async defer></script>
+
+<script type="text/javascript" src="/js/nav/tinynav.js"></script>
+<script type="text/javascript" src="/js/nav/hoverIntent.js"></script>
+<script type="text/javascript" src="/js/nav/superfish.js"></script>
+<script type="text/javascript" src="/js/nav/jquery.sticky.js"></script>
+<script>
+			//$('.panel-title a').click(function(event){
+			//	$('body').scrollTop($(this).offset().top)
+			//});
+			//$('.panel-title a').touchstart(function(event){
+			//	alert('dssdsd');
+			//});
+			//$('.panel-title a').on('click', function(event){
+			//$(this).addClass('select');
+			//event.preventdefault();
+			//alert($(this).offset().top);
+			//$('body').scrollTop($(this).offset().top);
+			//});
+			
+			
+			
+            /*$('#accordion').on('shown.bs.collapse', function () {
+window.elenow = $(this);
+$("html, body").scrollTop( $(window.elenow).offset().top);
+});*/
+
+/*$('#accordion').on('shown.bs.collapse', function () {
+  
+  var panel = $(this).find('.in');
+  
+  $('html, body').animate({
+        scrollTop: panel.offset().top
+  }, 500);
+  
+});*/
+
+
+                
+	/*if($(window).width()<760){
+	$('h4.panel-title').click(function(){
+showLoadingBox();
+closeLoadingBox();
+
+})};*/
+                
+            window.device_size =document.body.clientWidth;
+            $(".dropdown").hover(
+			
+                    function () {
+					if(window.device_size >700){
+                        $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).fadeIn("400");
+                        $(this).toggleClass('open');
+					}
+                    },
+                    function () {
+					if(window.device_size >700){
+                        $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).fadeOut("400");
+                        $(this).toggleClass('open');
+					}
+                    }
+            );
+			
+			$(".dropdown").click(
+                    function () {
+					
+					if(window.device_size <700){
+						window.current = $(this);
+						$('.mega-dropdown.dropdown').each(function(){
+							if($(this) != window.current){
+            				$(this).removeClass('open');
+							}
+        				});
+                        $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).fadeIn("400");
+                        $(this).toggleClass('open');
+					}
+                    },
+                    function () {
+					
+					if(window.device_size <700){
+                        $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).fadeOut("400");
+                        $(this).toggleClass('open');
+					}
+                    }
+            );
+
+//
+//            (function ($) {
+//                $(function () {
+//                    $(document).off('click.bs.tab.data-api', '[data-hover="tab"]');
+//                    $(document).on('mouseenter.bs.tab.data-api', '[data-toggle="tab"], [data-hover="tab"]', function () {
+//                        $(this).tab('show');
+//                    });
+//                });
+//            })(jQuery);
+
+               // setTimeout(function(){
+ // $('#Searching_Modal').modal('hide');
+//}, 3000);
+
+
+            (function ($) {
+                $(window).on("load", function () {
+$('#Searching_Modal').modal('hide');
+                    $(".myScroll").mCustomScrollbar({
+                        scrollButtons: {enable: true},
+                        theme: "light-thick",
+                        scrollbarPosition: "outside"
+                    });
+                });
+                
+
+            })(jQuery);
+            $("#owl-route").owlCarousel({
+                items: 1,
+                itemsCustom: false,
+                itemsDesktop: [1199, 1],
+                itemsDesktopSmall: [991, 1],
+                itemsTablet: [768, 1],
+                itemsTabletSmall: false,
+                itemsMobile: [480, 1],
+                navigation: false,
+                navigationText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+                pagination: true,
+                paginationNumbers: 3,
+                transitionStyle: "fade",
+                autoPlay: false,
+            });
+$("#owl-news").owlCarousel({
+                items: 1,
+                itemsCustom: false,
+                itemsDesktop: [1199, 1],
+                itemsDesktopSmall: [991, 1],
+                itemsTablet: [768, 1],
+                itemsTabletSmall: false,
+                itemsMobile: [480, 1],
+                navigation: false,
+                navigationText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+                pagination: true,
+                paginationNumbers: 3,
+                transitionStyle: "fade",
+                autoPlay: true,
+
+            });
+    
+    $("#owl-route_mob").owlCarousel({
+                items: 1,
+                itemsCustom: false,
+                itemsDesktop: [1199, 1],
+                itemsDesktopSmall: [991, 1],
+                itemsTablet: [768, 1],
+                itemsTabletSmall: false,
+                itemsMobile: [480, 1],
+                navigation: false,
+                navigationText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+                pagination: true,
+                paginationNumbers: 3,
+                transitionStyle: "fade",
+                autoPlay: true,
+            });
+$("#owl-news_mob").owlCarousel({
+                items: 1,
+                itemsCustom: false,
+                itemsDesktop: [1199, 1],
+                itemsDesktopSmall: [991, 1],
+                itemsTablet: [768, 1],
+                itemsTabletSmall: false,
+                itemsMobile: [480, 1],
+                navigation: false,
+                navigationText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+                pagination: true,
+                paginationNumbers: 3,
+                transitionStyle: "fade",
+                autoPlay: true,
+
+            });
+        </script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6c12c73d3df0773b","token":"5c57d97659e94e0085a1d41247fcad19","version":"2021.12.0","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>
